@@ -1,0 +1,12 @@
+<div class="carousel">
+    <h2>{{categorie}}</h2>
+    <div>
+        <button class="carousel-button left" (click)="scrollLeft()">&#9664;</button>
+        <div class="carousel-container" #carouselContainer>
+            @for (card of gameCards; track $index) {
+                <game-card cardTitle="{{card['title']}}" [cardPrice]="card.price" [cardStock]="card.stock" cardImg="{{card['imgSrc']}}" />
+            }
+        </div>
+        <button class="carousel-button right" (click)="scrollRight()">&#9654;</button>
+    </div>
+</div>

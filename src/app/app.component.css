@@ -1,0 +1,17 @@
+.storeTitle {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Comic Sans MS', cursive;
+    /* Add any additional styles you want here */
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footerText {
+    color: black;
+}
